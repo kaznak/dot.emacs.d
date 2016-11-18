@@ -1,0 +1,66 @@
+* COMMENT -*- Mode: org; -*-
+
+#+TITLE: .emacs.d
+
+* About
+
+Emacs Environment Configuration Files.
+
+* usage
+
+Step 1. install packages.
+
+#+BEGIN_SRC sh
+emacs --script setup.el
+#+END_SRC
+
+Step 2. bytecompile configuration files.
+
+#+BEGIN_SRC sh
+emacs --script byte-compile.el
+#+END_SRC
+
+* File tree
+
++ .emacs.d
+  + .git            : git repogitory
+  - .gitignore      : git ignoring file definition
+  - README.org      : This README file
+  - LICENSE         : About License
+
+  - setup.el        : package install in another new environment
+  - init.el         : Initial configuration file when emacs startup
+  + init            : Configuration files those are read by init.el
+    - 00-basic.el
+    - 10-xxxxx.el
+    - ...
+  - byte-compile.el : Bytecompile configuration files.
+                      Hyphen must be in name to avoid name conflict.
+  + elpa            : ELPA packages
+
+* References
+
+2016-07-25 新しい環境に1からemacsの設定を入れる
+http://dorapon2000.hatenablog.com/entry/2016/07/25/211039
+
+2014-09-18 Emacsで快適Web開発
+http://nakazye.hatenablog.com/entry/2014/09/18/012734
+
+Emacs起動時に自分好みのelispを自動的にインストールする
+http://d.hatena.ne.jp/hnw/20140113
+
+2016-07-25 新しい環境に1からemacsの設定を入れる
+http://dorapon2000.hatenablog.com/entry/2016/07/25/211039
+https://github.com/dorapon2000/my-emacs
+
+ELPA
+https://www.emacswiki.org/emacs/ELPA
+
+init ファイルの分割は是非やりたいところだ。
+
+The Emacs Editor -- 51.4 The Emacs Initialization File
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html
+
+is there a way to specify custom init file on emacs startup?
+http://stackoverflow.com/questions/17146844/is-there-a-way-to-specify-custom-init-file-on-emacs-startup
+
