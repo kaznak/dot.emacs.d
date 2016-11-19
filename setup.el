@@ -3,14 +3,17 @@
 ;;; Configuration Variables:
 (defvar setup-packages
   '(
-    org       ; Outline-based notes management and organizer
+    package-utils		; Extensions for package.el
+    ; auto-package-upddate	; Automatically update Emacs packages.
 
-    magit     ; A Git porcelain inside Emacs
-    navi2ch   ; Navigator for 2ch for Emacsen
+    org				; Outline-based notes management and organizer
 
-    web-mode  ; major mode for editing web templates
+    magit			; A Git porcelain inside Emacs
+    navi2ch			; Navigator for 2ch for Emacsen
 
-    wc-mode   ; Running word count with goals (minor mode)
+    web-mode			; major mode for editing web templates
+
+    wc-mode			; Running word count with goals (minor mode)
     )
   "List of install packages" )
 
