@@ -29,6 +29,11 @@
 	 "CNCL(c)" ;; cancel
 	 "MRGE(m)" ;; merged to other task
 	 )
+	(sequence
+	 "HABT(h)" ;; active habit
+	 "|"
+	 "DONE(d)" ;; done
+	 )
 	))
 
 ;; Capture
@@ -62,13 +67,13 @@
 (setq org-agenda-custom-commands
       '(("x" "Weekly Agenda and My unscheduled TODO"
 	 ((org-agenda-list)
-	  (tags-todo "#me+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
-	  (tags-todo "#me+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  (tags-todo "+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
+	  (tags-todo "+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
 	  (tags "習慣" nil) ; daily habit
 	  ))
 	("y" "My GOALs"
-	 ((tags "goal" nil)) )
-	("z" "My Someday TODO"
-	 ((tags-todo "#me+TODO=\"SMDY\"" nil)) )
+	 ((tags "goal" nil)
+	  (todo)
+	  ) )
 	))
 
