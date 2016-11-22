@@ -3,35 +3,72 @@
 ;; Files
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
-;; Binding
+;; Key Binding
 (define-key global-map "\C-ca" 'org-agenda)
 (define-key global-map "\C-cc" 'org-capture)
 
 ;; Directory
 (setq org-directory (expand-file-name "~/Dropbox/Org"))
 
+;; Tag
+(setq org-tags-exclude-from-inheritance
+      '("goal" "習慣") )
+
+;; Todo
+(setq org-log-done 'time)
+
+(setq org-todo-keywords
+      '(
+	(sequence
+	 "SMDY(x)" ;; inactive todo
+	 "WAIT(w)" ;; TODO alternative waiting event with SCHEDULED: in many cases
+	 "SCHD(s)" ;; TODO alternative scheduled event with SCHEDULED:
+	 "TODO(t)" ;; active todo with DEADLINE: in many cases
+	 "|"
+	 "DONE(d)" ;; done
+	 "CNCL(c)" ;; cancel
+	 "MRGE(m)" ;; merged to other task
+	 )
+	))
+
 ;; Capture
 (setq org-capture-templates
-      '(("j" "Journal" entry   ; Diary and Memo
-	 (file+headline (concat org-directory "/Journal.org") "Journal")
-	 "* Journal %U \n%?" )
+      '(("i" "Info" entry   ; info
+	 (file+headline (concat org-directory "/Dump.org") "INFO")
+	 "* INFO %U\n%?" )
 	
 	("t" "Todo" entry      ; Todo
-	 (file+headline (concat org-directory "/Journal.org") "Task")
- 	 "* TODO %? \nDEADLINE: %T\n** %U\n %i" )
- 	("s" "Scheduled" entry ; Schedule
- 	 (file+headline (concat org-directory "/Journal.org") "Task")
- 	 "* SCHD %? \nSCHEDULED: %T\n** %U\n  %i" )
+	 (file+headline (concat org-directory "/Dump.org") "Todo")
+ 	 "* TODO %?\n** INFO %U 登録\n %i" )
+	("w" "Waiting" entry  ; Waiting
+ 	 (file+headline (concat org-directory "/Dump.org") "Todo")
+ 	 "* SCHD %?\n** INFO %U 登録\n  %i" )
+ 	("s" "Scheduled" entry ; Scheduled
+ 	 (file+headline (concat org-directory "/Dump.org") "Todo")
+ 	 "* SCHD %?\n** INFO %U 登録\n  %i" )
+	("x" "Someday" entry      ; Todo
+	 (file+headline (concat org-directory "/Dump.org") "Todo")
+ 	 "* SMDY %?\n** %U 登録\n %i" )
 	))
 
 ;; Agenda
 (setq org-agenda-files
       (mapcar(lambda(p)(concat org-directory p))
-	     '("/Journal.org"
-	       "/Project/"
+	     '("/Dump.org"
 	       "/Static/"
+	       "/Todo/"
 	       )))
 
-;; Misc
-(setq org-log-done 'time)
+(setq org-agenda-custom-commands
+      '(("x" "Weekly Agenda and My unscheduled TODO"
+	 ((org-agenda-list)
+	  (tags-todo "#me+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
+	  (tags-todo "#me+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  (tags "習慣" nil) ; daily habit
+	  ))
+	("y" "My GOALs"
+	 ((tags "goal" nil)) )
+	("z" "My Someday TODO"
+	 ((tags-todo "#me+TODO=\"SMDY\"" nil)) )
+	))
 
