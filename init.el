@@ -2,8 +2,13 @@
 
 (package-initialize)
 
-;; Load Initialization files
+;; Handle Initialization files
 (let ((init-directory (expand-file-name "~/.emacs.d/init")))
+
+  ;; Bytecompile 
+  (byte-recompile-directory init-directory 0)
+
+  ;; Load
   (dolist(file (mapcar 'file-name-sans-extension 
 		       (directory-files init-directory t ".*\\.el$") ))
     (message "Loading config file:%s" file)
