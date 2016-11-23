@@ -407,7 +407,7 @@
 
 (global-set-key "\C-ca" 'org-agenda)
 
-(setq org-directory "~/Dropbox/Org")
+(setq org-directory "~/Dropbox/Org.OLD/Org.20161123")
 
 ;; * 9 Capture - Refile - Archive
 ;; ** 9.1 Capture
