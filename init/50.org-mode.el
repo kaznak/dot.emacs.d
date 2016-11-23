@@ -30,7 +30,7 @@
 	 "MRGE(m)" ;; merged to other task
 	 )
 	(sequence
-	 "HABT(h)" ;; active habit
+	 "HABT(h)" ;; active habit/習慣
 	 "|"
 	 "DONE(d)" ;; done
 	 )
