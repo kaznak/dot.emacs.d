@@ -86,3 +86,15 @@
 	  (tags-todo "+TODO=\"SMDY\"" nil) ; someday
 	  ))
 	))
+
+;; Old Codes
+;; ;; ditaa との連携
+;; (setq org-ditaa-jar-path "~/UnixApplications/share/jditaa/jditaa.jar")
+
+;; ;; コードを評価するとき尋ねない
+;; (setq org-confirm-babel-evaluate nil)
+;; ;; 有効にする言語(デフォルトではelispのみ)
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '((ditaa . t)
+;;    (dot . t)))
