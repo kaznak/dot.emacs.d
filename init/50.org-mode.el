@@ -47,7 +47,7 @@
  	 "* TODO %?\n** INFO %U 登録\n %i" )
 	("w" "Waiting" entry  ; Waiting
  	 (file+headline (concat org-directory "/Dump.org") "Todo")
- 	 "* SCHD %?\n** INFO %U 登録\n  %i" )
+ 	 "* WAIT %?\n** INFO %U 登録\n  %i" )
  	("s" "Scheduled" entry ; Scheduled
  	 (file+headline (concat org-directory "/Dump.org") "Todo")
  	 "* SCHD %?\n** INFO %U 登録\n  %i" )
