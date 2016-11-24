@@ -12,7 +12,7 @@
 
 ;; Tag
 (setq org-tags-exclude-from-inheritance
-      '("goal" "subgoal" "習慣") )
+      '("goal" "subgoal" "loop" "習慣") )
 
 ;; Todo
 (setq org-log-done 'time)
@@ -70,10 +70,10 @@
 	  (tags "+subgoal-someday" nil)
 	  (todo)
 	  ) )
-	("y" "Weekly Agenda and My unscheduled TODO"
+	("y" "Today's Agenda and My unscheduled TODO"
 	 ((org-agenda-list 1)
-	  (tags-todo "+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
-	  (tags-todo "+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
+	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
 	  (tags "習慣" nil) ; daily habit
 	  ))
 	("z" "Someday and Waiting Works"
