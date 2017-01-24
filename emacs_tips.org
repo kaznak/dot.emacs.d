@@ -7,13 +7,19 @@
 Function : text-scale-adjust
 Shortcut : C-x C-0
 
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Text-Scale.html][14.11 Text Scale]]
+
 * Truncate long lines
 
 Function : toggle-truncate-lines
 Emacs wrap long lines without editing the buffer, just showing.
 
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Line-Truncation.html][14.21 Line Truncation]]
+
 Function : auto-fill-mode
 Emacs wrap long lines with edit the buffer when you press RET key.
+
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Fill.html][25.6.1 Auto Fill Mode]]
 
 * Rectangular mark(selection)
 
