@@ -13,7 +13,7 @@
 
     web-mode			; major mode for editing web templates
 
-    wc-mode			; Running word count with goals (minor mode)
+    ;; wc-mode			; Running word count with goals (minor mode)
     )
   "List of install packages" )
 
