@@ -1,0 +1,17 @@
+* COMMENT -*- Mode: org; -*-
+
+#+TITLE: Emacs small tips
+
+* Change Font Size temporally
+
+Function : text-scale-adjust
+Shortcut : C-x C-0
+
+* Truncate long lines
+
+Function : toggle-truncate-lines
+Emacs wrap long lines without editing the buffer, just showing.
+
+Function : auto-fill-mode
+Emacs wrap long lines with edit the buffer when you press RET key.
+
