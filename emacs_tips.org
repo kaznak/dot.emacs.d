@@ -15,3 +15,14 @@ Emacs wrap long lines without editing the buffer, just showing.
 Function : auto-fill-mode
 Emacs wrap long lines with edit the buffer when you press RET key.
 
+* Rectangular mark(selection)
+
+|----------------------------+--------------------------------------|
+| Key                        | Description                          |
+|----------------------------+--------------------------------------|
+| C-x SPC                    | Toggle Rectangle Mark mode           |
+| C-w/M-w/C-y                | Cut/Copy/yank Selected area          |
+| C-SPC -> (Mark) -> C-x SPC | Change Marked area to Rectangle Mark |
+|----------------------------+--------------------------------------|
+
+[https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html]
