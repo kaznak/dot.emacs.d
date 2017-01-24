@@ -25,4 +25,4 @@ Emacs wrap long lines with edit the buffer when you press RET key.
 | C-SPC -> (Mark) -> C-x SPC | Change Marked area to Rectangle Mark |
 |----------------------------+--------------------------------------|
 
-[https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html]
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html][12.5 Rectangles]]
