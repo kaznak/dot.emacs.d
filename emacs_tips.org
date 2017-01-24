@@ -23,12 +23,9 @@ Emacs wrap long lines with edit the buffer when you press RET key.
 
 * Rectangular mark(selection)
 
-|----------------------------+--------------------------------------|
-| Key                        | Description                          |
-|----------------------------+--------------------------------------|
-| C-x SPC                    | Toggle Rectangle Mark mode           |
-| C-w/M-w/C-y                | Cut/Copy/yank Selected area          |
-| C-SPC -> (Mark) -> C-x SPC | Change Marked area to Rectangle Mark |
-|----------------------------+--------------------------------------|
+Function : rectangle-mark-mode
+Shortcut : C-x SPC
+When an area has been already marked, the area is changed to rectangular mark.
+Cut/Copy/yank key is same on normal mode.
 
 [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html][12.5 Rectangles]]
