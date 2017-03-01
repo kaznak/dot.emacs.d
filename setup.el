@@ -4,15 +4,16 @@
 (defvar setup-packages
   '(
     package-utils		; Extensions for package.el
-    ; auto-package-upddate	; Automatically update Emacs packages.
+    ;; auto-package-upddate	; Automatically update Emacs packages.
 
     org				; Outline-based notes management and organizer
 
     magit			; A Git porcelain inside Emacs
-    navi2ch			; Navigator for 2ch for Emacsen
+    ;; navi2ch			; Navigator for 2ch for Emacsen
 
     web-mode			; major mode for editing web templates
-    markdown-mode               ]
+    markdown-mode		; 
+    bison-mode			; 
 
     ;; wc-mode			; Running word count with goals (minor mode)
     )
