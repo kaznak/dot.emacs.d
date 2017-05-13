@@ -12,8 +12,8 @@
     ;; navi2ch			; Navigator for 2ch for Emacsen
 
     web-mode			; major mode for editing web templates
-    markdown-mode		; 
-    bison-mode			; 
+    markdown-mode		; Major mode for Markdown-formatted text
+    bison-mode			; Major mode for editing bison, yacc and lex files.
 
     ;; wc-mode			; Running word count with goals (minor mode)
     )
