@@ -1,5 +1,8 @@
 ;;; 50.org-mode.el --- Emacs Org Configuration
 
+;; buffer
+(setq org-startup-truncated nil)
+
 ;; Files
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 
