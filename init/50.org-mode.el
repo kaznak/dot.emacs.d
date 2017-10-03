@@ -40,22 +40,29 @@
 	))
 
 ;; Capture
+;; * This is Inbox of GTD
+(setq org-capture-default-file
+      (concat org-directory
+	      "/" "Diary"
+	      "/" (format-time-string "%Y-%m-%d"
+				      (current-time)) "." "Diary.org")
+      )
+
 (setq org-capture-templates
-      '(("i" "Info" entry   ; info
-	 (file+headline (concat org-directory "/Dump.org") "INFO")
-	 "* INFO %U\n%?" )
-	
+      '(("i" "Info" entry   ; Info
+	 (file+headline org-capture-default-file "Diary")
+	 "* %U\n%?" )
 	("t" "Todo" entry      ; Todo
-	 (file+headline (concat org-directory "/Dump.org") "Todo")
- 	 "* TODO %?\n** INFO %U 登録\n %i" )
+	 (file+headline org-capture-default-file "Diary")
+ 	 "* TODO %?\n** %U 登録\n %i" )
 	("w" "Waiting" entry  ; Waiting
- 	 (file+headline (concat org-directory "/Dump.org") "Todo")
- 	 "* WAIT %?\n** INFO %U 登録\n  %i" )
+ 	 (file+headline org-capture-default-file "Diary")
+ 	 "* WAIT %?\n** %U 登録\n %i" )
  	("s" "Scheduled" entry ; Scheduled
- 	 (file+headline (concat org-directory "/Dump.org") "Todo")
- 	 "* SCHD %?\n** INFO %U 登録\n  %i" )
+ 	 (file+headline org-capture-default-file "Diary")
+ 	 "* SCHD %?\n** %U 登録\n %i" )
 	("x" "Someday" entry      ; Todo
-	 (file+headline (concat org-directory "/Dump.org") "Todo")
+	 (file+headline org-capture-default-file "Diary")
  	 "* SMDY %?\n** %U 登録\n %i" )
 	))
 
