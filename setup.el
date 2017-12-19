@@ -3,20 +3,25 @@
 ;;; Configuration Variables:
 (defvar setup-packages
   '(
+    ;; * package manager
     package-utils		; Extensions for package.el
     ;; auto-package-upddate	; Automatically update Emacs packages.
 
+    ;; * applications
     org				; Outline-based notes management and organizer
     magit			; A Git porcelain inside Emacs
+    ;; navi2ch			; Navigator for 2ch for Emacsen
+    gist                        ; gist.el -- Emacs integration for gist.github.com
+    ;; wc-mode			; Running word count with goals (minor mode)
 
+    ;; * syntax highlighter
     web-mode			; major mode for editing web templates
     markdown-mode		; Major mode for Markdown-formatted text
     bison-mode			; Major mode for editing bison, yacc and lex files.
+    rust-mode
 
-    ;; navi2ch			; Navigator for 2ch for Emacsen
-    gist			; gist.el -- Emacs integration for gist.github.com
-
-    ;; wc-mode			; Running word count with goals (minor mode)
+    ;; * syntax checker
+    flycheck-rust
     )
   "List of install packages" )
 
