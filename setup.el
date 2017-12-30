@@ -7,6 +7,9 @@
     package-utils		; Extensions for package.el
     ;; auto-package-upddate	; Automatically update Emacs packages.
 
+    ;; * Input methods
+    mozc                        ; minor mode to input Japanese with Mozc
+
     ;; * applications
     org				; Outline-based notes management and organizer
     magit			; A Git porcelain inside Emacs
