@@ -11,7 +11,7 @@
 (define-key global-map "\C-cc" 'org-capture)
 
 ;; Directory
-(setq org-directory (expand-file-name "~/Dropbox/Org"))
+(setq org-directory (expand-file-name "~/WinHome/Dropbox/Work/Org/Org.20171231"))
 
 ;; Tag
 (setq org-tags-exclude-from-inheritance
