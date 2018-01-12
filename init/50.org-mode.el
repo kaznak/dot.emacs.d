@@ -47,14 +47,6 @@
 	      "/" (format-time-string "%Y-%m-%d"
 				      (current-time)) "." "Diary.org")
       )
-(defun org-capture-default-file-update()
-  (setq org-capture-default-file
-	(concat org-directory
-		"/" "Diary"
-		"/" (format-time-string "%Y-%m-%d"
-					(current-time)) "." "Diary.org")
-	)
-  )
 
 (setq org-capture-templates
       '(("i" "Info" entry   ; Info
