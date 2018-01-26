@@ -24,10 +24,10 @@
       '(
 	(sequence
 	 "SMDY(x)" ;; inactive todo
-	 "WAIT(w)" ;; TODO alternative waiting event with SCHEDULED: in many cases
-	 "SCHD(s)" ;; TODO alternative scheduled event with SCHEDULED:
-	 "TODO(t)" ;; active todo with DEADLINE: in many cases
 	 "NEXT(n)" ;; active todo, waiting done of other todo.
+	 "WAIT(w)" ;; active todo, but waiting event or with SCHEDULED: in many cases.
+	 "SCHD(s)" ;; scheduled event with SCHEDULED:.
+	 "TODO(t)" ;; active todo with DEADLINE: in many cases.
 	 "|"
 	 "DONE(d)" ;; done
 	 "CNCL(c)" ;; cancel
@@ -82,11 +82,10 @@
 	  (todo)
 	  ) )
 	("y" "Today's Agenda and My unscheduled TODO"
-	 ((tags "習慣" nil) ; daily habits
+	 ((tags "習慣" nil) ; daily habits and routines
 	  (org-agenda-list 1)
 	  ;; (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
 	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
-	  
 	  ))
 	("z" "Someday and Waiting Works"
 	 (;; Wait
