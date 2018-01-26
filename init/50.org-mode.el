@@ -27,6 +27,7 @@
 	 "WAIT(w)" ;; TODO alternative waiting event with SCHEDULED: in many cases
 	 "SCHD(s)" ;; TODO alternative scheduled event with SCHEDULED:
 	 "TODO(t)" ;; active todo with DEADLINE: in many cases
+	 "NEXT(n)" ;; active todo, waiting done of other todo.
 	 "|"
 	 "DONE(d)" ;; done
 	 "CNCL(c)" ;; cancel
