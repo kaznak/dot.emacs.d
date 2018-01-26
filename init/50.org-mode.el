@@ -91,9 +91,11 @@
 	 (;; Wait
 	  (tags-todo "+TODO=\"WAIT\"-SCHEDULED=\"\"" nil) ; scheduled wait 
 	  (tags-todo "+TODO=\"WAIT\"+SCHEDULED=\"\"" nil) ; unscheduled wait
+	  ;; scheduled
+	  (tags-todo "+TODO=\"SCHD\"-SCHEDULED=\"\"" nil) ; scheduled SCHD
 	  ;; someday
-	  (tags "+goal+someday" nil)
-	  (tags "+subgoal+someday" nil)
+	  ;; (tags "+goal+someday" nil)
+	  ;; (tags "+subgoal+someday" nil)
 	  (tags-todo "+TODO=\"SMDY\"" nil) ; someday
 	  ))
 	("w" "My unscheduled TODO"
