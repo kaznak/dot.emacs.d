@@ -96,6 +96,10 @@
 	  (tags "+subgoal+someday" nil)
 	  (tags-todo "+TODO=\"SMDY\"" nil) ; someday
 	  ))
+	("w" "My unscheduled TODO"
+	 ((tags "習慣" nil) ; daily habits and routines
+	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  ))
 	))
 
 ;; Old Codes
