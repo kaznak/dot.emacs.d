@@ -15,16 +15,18 @@
     org				; Outline-based notes management and organizer
     magit			; A Git porcelain inside Emacs
     gist                        ; gist.el -- Emacs integration for gist.github.com
+    google-translate            ; Emacs interface to Google Translate.
     ;; navi2ch			; Navigator for 2ch for Emacsen
 
     ;; * syntax highlighter
     web-mode			; major mode for editing web templates
     markdown-mode		; Major mode for Markdown-formatted text
-    bison-mode			; Major mode for editing bison, yacc and lex files.
     rust-mode                   ; A major emacs mode for editing Rust source code
+    hcl-mode                    ; Major mode for Hashicorp
+    ;; bison-mode			; Major mode for editing bison, yacc and lex files.
 
     ;; * syntax checker
-    flycheck-rust
+    ;; flycheck-rust
     )
   "List of install packages" )
 
