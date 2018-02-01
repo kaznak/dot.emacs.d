@@ -15,7 +15,7 @@
 
 ;; Tag
 (setq org-tags-exclude-from-inheritance
-      '("goal" "subgoal" "loop" "習慣") )
+      '("goal" "subgoal" "position" "loop" "習慣") )
 
 ;; Todo
 (setq org-log-done 'time)
@@ -79,6 +79,7 @@
       '(("x" "My GOALs"
 	 ((tags "+goal-someday" nil)
 	  (tags "+subgoal-someday" nil)
+	  (tags "+position" nil)
 	  (todo)
 	  ) )
 	("y" "Today's Agenda and My unscheduled TODO"
@@ -88,9 +89,10 @@
 	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
 	  ))
 	("z" "Someday and Waiting Works"
-	 (;; Wait
+	 (;; Wait and NEXT
 	  (tags-todo "+TODO=\"WAIT\"-SCHEDULED=\"\"" nil) ; scheduled wait 
 	  (tags-todo "+TODO=\"WAIT\"+SCHEDULED=\"\"" nil) ; unscheduled wait
+	  (tags-todo "+TODO=\"NEXT\"" nil) ; NEXT actions
 	  ;; scheduled
 	  (tags-todo "+TODO=\"SCHD\"-SCHEDULED=\"\"" nil) ; scheduled SCHD
 	  ;; someday
@@ -100,7 +102,8 @@
 	  ))
 	("w" "My unscheduled TODO"
 	 ((tags "習慣" nil) ; daily habits and routines
-	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  ;; (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
+	  (tags-todo "-loop+TODO=\"TODO\"" nil) ; to schedule
 	  ))
 	))
 
