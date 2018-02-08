@@ -17,6 +17,7 @@
     gist                        ; gist.el -- Emacs integration for gist.github.com
     google-translate            ; Emacs interface to Google Translate.
     ;; navi2ch			; Navigator for 2ch for Emacsen
+    zeal-at-point		; Search the word at point with Zeal
 
     ;; * syntax highlighter
     web-mode			; major mode for editing web templates
