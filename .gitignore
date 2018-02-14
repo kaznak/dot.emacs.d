@@ -2,49 +2,24 @@
 
 ### gitignore from https://github.com/github/gitignore
 
-### * Emacs 
-
+### * Editors
+### ** Emacs 
 *~
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
-*.elc
-auto-save-list
-tramp
 .\#*
 
-# Org-mode
-.org-id-locations
-*_archive
+### *** Emacs elisp
+*.elc
 
-# flymake-mode
-*_flymake.*
+### *** ELPA directory
+elpa/
 
-# eshell files
-/eshell/history
-/eshell/lastdir
+### *** Emacs-W3 directory
+url/
 
-# elpa packages
-/elpa/
+### *** bookmark: https://www.emacswiki.org/emacs/BookMarks
+bookmarks
 
-# reftex files
-*.rel
+### ** Vi
+*.swp
 
-# AUCTeX auto folder
-/auto/
-
-# cask packages
-.cask/
-dist/
-
-# Flycheck
-flycheck_*.el
-
-# server auth directory
-/server/
-
-# projectiles files
-.projectile
-
-# directory configuration
-.dir-locals.el
