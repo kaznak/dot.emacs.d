@@ -100,12 +100,16 @@
 	  ;; (tags "+subgoal+someday" nil)
 	  (tags-todo "+TODO=\"SMDY\"" nil) ; someday
 	  ))
-	("w" "My unscheduled TODO"
-	 ((tags "習慣" nil) ; daily habits and routines
-	  ;; (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
-	  (tags-todo "-loop+TODO=\"TODO\"" nil) ; to schedule
-	  ))
 	))
+
+;; Load Org local Settings
+(byte-recompile-directory org-directory 0)
+(dolist(file (mapcar 'file-name-sans-extension 
+		     (directory-files org-directory t ".*\\.el$") ))
+  (message "Loading config file:%s" file)
+  (load file)
+  ;; (message "Loaded config file:%s" file)
+  )
 
 ;; Old Codes
 ;; ;; ditaa との連携
