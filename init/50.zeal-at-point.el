@@ -5,10 +5,10 @@
 
 (global-set-key "\C-cd" 'zeal-at-point)
 
-;; narrow down with a docset prefix
-(add-to-list 'zeal-at-point-mode-alist '(perl-mode . "perl"))
-;; ;; Use multiple docsets
-(add-to-list 'zeal-at-point-mode-alist '(python-mode . ("python" "django")))
+;; ;; narrow down with a docset prefix
+;; (add-to-list 'zeal-at-point-mode-alist '(perl-mode . "perl"))
+;; ;; ;; Use multiple docsets
+;; (add-to-list 'zeal-at-point-mode-alist '(python-mode . ("python" "django")))
 
 ;; ;; set buffer local zeal-at-point-docset
 ;; (add-hook 'rinari-minor-mode-hook
