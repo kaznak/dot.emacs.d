@@ -24,6 +24,7 @@
     markdown-mode		; Major mode for Markdown-formatted text
     rust-mode                   ; A major emacs mode for editing Rust source code
     hcl-mode                    ; Major mode for Hashicorp
+    php-mode                    ; Major mode for editing PHP code    
     ;; bison-mode			; Major mode for editing bison, yacc and lex files.
 
     ;; * syntax checker
