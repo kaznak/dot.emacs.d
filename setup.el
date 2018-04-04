@@ -22,10 +22,14 @@
     ;; * syntax highlighter
     web-mode			; major mode for editing web templates
     markdown-mode		; Major mode for Markdown-formatted text
-    rust-mode                   ; A major emacs mode for editing Rust source code
-    hcl-mode                    ; Major mode for Hashicorp
-    php-mode                    ; Major mode for editing PHP code    
+    yaml-mode			; Major mode for editing YAML files
+
+    haskell-mode		; A Haskell editing mode
+    rust-mode			; A major emacs mode for editing Rust source code
+    php-mode			; Major mode for editing PHP code
     ;; bison-mode			; Major mode for editing bison, yacc and lex files.
+
+    hcl-mode			; Major mode for Hashicorp
 
     ;; * syntax checker
     ;; flycheck-rust
