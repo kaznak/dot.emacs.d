@@ -84,7 +84,7 @@
 	  ) )
 	("y" "Today's Agenda and My unscheduled TODO"
 	 ((tags "習慣" nil) ; daily habits and routines
-	  (org-agenda-list 1)
+	  (org-agenda-list 2)
 	  ;; (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
 	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule
 	  ))
