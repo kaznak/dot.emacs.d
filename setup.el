@@ -19,6 +19,9 @@
     ;; navi2ch			; Navigator for 2ch for Emacsen
     zeal-at-point		; Search the word at point with Zeal
 
+    ;; * language tool
+    flycheck                    ; On-the-fly syntax checking
+
     ;; * syntax highlighter
     web-mode			; major mode for editing web templates
     markdown-mode		; Major mode for Markdown-formatted text
