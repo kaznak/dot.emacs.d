@@ -26,18 +26,22 @@
     web-mode			; major mode for editing web templates
     markdown-mode		; Major mode for Markdown-formatted text
     yaml-mode			; Major mode for editing YAML files
+    adoc-mode			; a major-mode for editing AsciiDoc files
 
     haskell-mode		; A Haskell editing mode
     rust-mode			; A major emacs mode for editing Rust source code
     php-mode			; Major mode for editing PHP code
     ;; bison-mode			; Major mode for editing bison, yacc and lex files.
+    rjsx-mode			; Real support for JSX
 
     hcl-mode			; Major mode for Hashicorp
+    dockerfile-mode		; Major mode for editing Docker's Dockerfiles
 
     ;; * syntax checker
+    flycheck			; On-the-fly syntax checking
     ;; flycheck-rust
     )
-  "List of install packages" )
+  "List of install packages." )
 
 ;; Main routine
 (eval-when-compile (require 'cl))
