@@ -39,7 +39,7 @@
 
     ;; * syntax checker
     flycheck			; On-the-fly syntax checking
-    ;; flycheck-rust
+    flycheck-rust		; Flycheck: Rust additions and Cargo support
     )
   "List of install packages." )
 

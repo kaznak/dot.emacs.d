@@ -11,7 +11,8 @@
 (define-key global-map "\C-cc" 'org-capture)
 
 ;; Directory
-(setq org-directory (expand-file-name "~/WinHome/Dropbox/Work/Org/Org.20171231"))
+;; (setq org-directory (expand-file-name "~/WinHome/Dropbox/Work/Org/Org.20171231"))
+(setq org-directory (expand-file-name "~/WinHome/Dropbox/Work/Org/Org.20190104"))
 
 ;; Tag
 (setq org-tags-exclude-from-inheritance
@@ -83,7 +84,8 @@
 	  (todo)
 	  ) )
 	("y" "Today's Agenda and My unscheduled TODO"
-	 ((tags "習慣" nil) ; daily habits and routines
+	 ((tags "+goal-someday" nil)
+	  ;; (tags "習慣" nil) ; daily habits and routines
 	  (org-agenda-list 2)
 	  ;; (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED<\"<today>\"" nil) ; to reschedule
 	  (tags-todo "-loop+TODO=\"TODO\"+SCHEDULED=\"\"" nil) ; to schedule

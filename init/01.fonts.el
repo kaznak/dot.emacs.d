@@ -38,19 +38,19 @@
 ;; "-IPA -IPA明朝-normal-normal-normal-*-*-*-*-*-d-0-iso10646-1"
 ;; "-IPA -IPA Pゴシック-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
 
-(create-fontset-from-ascii-font "Ricty" nil "Ricty")
-(set-fontset-font "fontset-Ricty" 'unicode "Ricty" nil 'append)
-;; (add-to-list 'default-frame-alist '(font . "fontset-Ricty"))
+;; (create-fontset-from-ascii-font "Ricty" nil "Ricty")
+;; (set-fontset-font "fontset-Ricty" 'unicode "Ricty" nil 'append)
+;; ;; (add-to-list 'default-frame-alist '(font . "fontset-Ricty"))
 
-(create-fontset-from-ascii-font "Ricty Discord" nil "Ricty_Discord")
-(set-fontset-font "fontset-Ricty_Discord" 'unicode "Ricty Discord" nil 'append)
-;; (add-to-list 'default-frame-alist '(font . "fontset-Ricty_Discord"))
+;; (create-fontset-from-ascii-font "Ricty Discord" nil "Ricty_Discord")
+;; (set-fontset-font "fontset-Ricty_Discord" 'unicode "Ricty Discord" nil 'append)
+;; ;; (add-to-list 'default-frame-alist '(font . "fontset-Ricty_Discord"))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; "-PfEd-Ricty-bold-normal-normal-*-*-*-*-*-*-0-iso10646-1"
-;; "-PfEd-Ricty-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
-;; "-PfEd-Ricty Discord-bold-normal-normal-*-*-*-*-*-*-0-iso10646-1"
-;; "-PfEd-Ricty Discord-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; "-PfEd-Ricty-bold-normal-normal-*-*-*-*-*-*-0-iso10646-1"
+;; ;; "-PfEd-Ricty-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
+;; ;; "-PfEd-Ricty Discord-bold-normal-normal-*-*-*-*-*-*-0-iso10646-1"
+;; ;; "-PfEd-Ricty Discord-normal-normal-normal-*-*-*-*-*-*-0-iso10646-1"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; MigMix 1MをEmacsのデフォルトのフォントに
