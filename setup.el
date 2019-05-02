@@ -36,6 +36,9 @@
 
     hcl-mode			; Major mode for Hashicorp
     dockerfile-mode		; Major mode for editing Docker's Dockerfiles
+    cider                       ; Clojure Interactive Development Environment that Rocks
+    projectile                  ; Manage and navigate projects in Emacs easily
+    powershell                  ; Mode for editing PowerShell scripts
 
     ;; * syntax checker
     flycheck			; On-the-fly syntax checking
