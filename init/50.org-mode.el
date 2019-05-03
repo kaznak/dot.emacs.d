@@ -19,9 +19,6 @@
 ;; Babel
 (require 'ob-clojure)
 
-(setq org-ditaa-jar-path "/usr/share/ditaa/ditaa.jar")
-;; (shell-command-to-string "{ p=$(which ditaa) ; readlink -f $(dirname $p)/$(readlink $p) | tr -d '\n' ; }")
-
 (setq org-confirm-babel-evaluate nil) ; don't ask before evaluation
 (org-babel-do-load-languages
  'org-babel-load-languages
@@ -33,7 +30,11 @@
    (dot . t)
    ))
 
+(setq org-ditaa-jar-path "/usr/share/ditaa/ditaa.jar")
+;; (shell-command-to-string "{ p=$(which ditaa) ; readlink -f $(dirname $p)/$(readlink $p) | tr -d '\n' ; }")
 
+(setq org-babel-clojure-backend 'cider)
+(require 'cider)
 
 ;; Load Org local Settings
 (byte-recompile-directory org-directory 0)
