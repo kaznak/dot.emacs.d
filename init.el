@@ -1,5 +1,19 @@
 ;;; init-loader --- Load initialization files
 
+;; Setup package.el
+(require 'package)
+(require 'cl)
+
+(setq load-path (cons (expand-file-name "~/.emacs.d/elpa") load-path))
+(load (expand-file-name "~/.emacs.d/packages-list.el"))
+
+(setq package-archives my-package-archives)
+
+(setq package-pinned-packages
+      (loop for pkg in my-packages
+	    when (nth 2 pkg)
+	    collect (cons (nth 0 pkg) (nth 2 pkg)) ) )
+
 (package-initialize)
 
 ;; Handle Initialization files
